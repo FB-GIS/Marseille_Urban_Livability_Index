@@ -76,7 +76,7 @@ The analysis follows four main steps:
 
 ## DATA
 -------
-  Source   : OpenStreetMap (via OSMnx)  
+  Source   : OpenStreetMap (from OSMnx)  
   Spatial extent : 16 arrondissements of Marseille (1er to 16e)  
 
 
