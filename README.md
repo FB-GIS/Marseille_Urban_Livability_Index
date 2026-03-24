@@ -2,10 +2,8 @@
 
 ## PROJECT OVERVIEW
 ------------------
-This project computes a composite Urban Quality of Life Index for each of the  
-16 arrondissements (districts) of Marseille, France.  
-Data is collected from OpenStreetMap via the OSMnx library, processed and  
-normalized, then aggregated into a single weighted index per district.  
+This project computes a composite Urban Quality of Life Index for each of the 16 arrondissements (districts) of Marseille, France.  
+Data is collected from OpenStreetMap via the OSMnx library, processed and  normalized, then aggregated into a single weighted index per district.  
 Results are visualized as a choropleth map.  
 
 
