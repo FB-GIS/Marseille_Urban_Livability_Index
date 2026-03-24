@@ -1,8 +1,4 @@
 # Urban Quality of Life Index — Marseille Districts
-# =====================================================
-# Analysis of urban quality of life based on the calculation of a simple index
-# (value between 0 and 1) produced for each district of the city of Marseille.
-
 
 ## PROJECT OVERVIEW
 ------------------
