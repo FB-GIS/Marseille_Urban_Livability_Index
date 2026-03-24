@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "emergency_services",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "element": "node", "id": 2314442025, "amenity": "police", "name": "Police nationale", "official_name": "Commissariat de police de Marseille 16ème arrondissement", "operator": "Police nationale", "operator:wikidata": "Q121484", "operator:wikipedia": "fr:Police nationale (France)", "phone": "+33 4 84 35 37 40", "police:FR": "police", "source": "Bing + cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013", "wikidata": "Q61953954", "ref": null, "ref:FR:BMPM:GRPT": null, "short_name": null }, "geometry": { "type": "Point", "coordinates": [ 5.3174707, 43.3633222 ] } },
+{ "type": "Feature", "properties": { "element": "way", "id": 1322610612, "amenity": "fire_station", "name": "Centre d’incendie et de secours Saumaty", "official_name": null, "operator": "Bataillon de marins-pompiers de Marseille", "operator:wikidata": "Q2891011", "operator:wikipedia": null, "phone": null, "police:FR": null, "source": null, "wikidata": null, "ref": "SMY", "ref:FR:BMPM:GRPT": "Nord", "short_name": "CIS Saumaty" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 5.3211078, 43.3571649 ], [ 5.3212512, 43.3570698 ], [ 5.3213775, 43.3570441 ], [ 5.3217715, 43.3570897 ], [ 5.321802, 43.357115 ], [ 5.3218121, 43.3571107 ], [ 5.3218815, 43.357139 ], [ 5.3219408, 43.3572345 ], [ 5.3219662, 43.3572696 ], [ 5.3217649, 43.3573586 ], [ 5.3216819, 43.3574149 ], [ 5.3216201, 43.3574496 ], [ 5.3214491, 43.3574345 ], [ 5.3213431, 43.3574179 ], [ 5.3212995, 43.3574033 ], [ 5.3212546, 43.3573789 ], [ 5.321209, 43.3573477 ], [ 5.3211812, 43.3573163 ], [ 5.3211949, 43.3572953 ], [ 5.3211601, 43.3572451 ], [ 5.321149, 43.3572451 ], [ 5.3211346, 43.3572093 ], [ 5.3211473, 43.357199 ], [ 5.3211262, 43.3571834 ], [ 5.3211078, 43.3571649 ] ] ] } }
+]
+}

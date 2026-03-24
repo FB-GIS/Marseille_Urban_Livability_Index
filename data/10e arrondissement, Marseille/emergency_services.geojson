@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "emergency_services",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "element": "node", "id": 1466793218, "amenity": "police", "name": "Gendarmerie nationale", "operator": "Gendarmerie nationale", "addr:housenumber": null, "official_name": null, "operator:wikidata": null, "operator:wikipedia": null, "phone": null, "police:FR": null, "wikidata": null, "ref:FR:GendarmerieNationale": null, "source": null }, "geometry": { "type": "Point", "coordinates": [ 5.410753, 43.2866173 ] } },
+{ "type": "Feature", "properties": { "element": "node", "id": 2547040942, "amenity": "police", "name": "Police nationale", "operator": "Police nationale", "addr:housenumber": "87", "official_name": "Commissariat de police de Marseille 10ème arrondissement", "operator:wikidata": "Q121484", "operator:wikipedia": "fr:Police nationale (France)", "phone": "+33 4 84 35 34 50", "police:FR": "police", "wikidata": "Q61953947", "ref:FR:GendarmerieNationale": null, "source": null }, "geometry": { "type": "Point", "coordinates": [ 5.4089257, 43.2831109 ] } },
+{ "type": "Feature", "properties": { "element": "node", "id": 4170107135, "amenity": "police", "name": "Gendarmerie nationale", "operator": "Gendarmerie nationale", "addr:housenumber": null, "official_name": "Brigade de gendarmerie de Marseille", "operator:wikidata": "Q1422336", "operator:wikipedia": "fr:Gendarmerie nationale française", "phone": "+33 4 91 16 39 30", "police:FR": "gendarmerie", "wikidata": null, "ref:FR:GendarmerieNationale": "1009968", "source": "Service-Public.fr - 11/2015" }, "geometry": { "type": "Point", "coordinates": [ 5.3973157, 43.283744 ] } }
+]
+}
