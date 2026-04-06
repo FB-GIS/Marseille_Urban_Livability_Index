@@ -44,7 +44,7 @@ The analysis follows four main steps:
 
   3. INDEX COMPUTATION
 
-     1. Livability Index :  
+     1) Livability Index :  
           
      - All indicators are normalized to a [1, 10] scale using MinMaxScaler.  
      - A weighted sum is applied to produce the Unified Index:  
@@ -60,7 +60,7 @@ The analysis follows four main steps:
          Employment Centers Density  : 0.10  
      - The Unified Index is then re-normalized to [1, 10] and rounded.
     
-  2.Accessibility Index:  
+  2) Accessibility Index:  
   
   1. Polyfill each arrondissement with **H3 hexagonal cells** at resolution 9 (~105 m edge length, ~0.1 km²).  
   2. For each hexagon, measure the four indicators using **circular buffers**:  
