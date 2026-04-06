@@ -72,8 +72,8 @@ The analysis follows four main steps:
   
   1. Polyfill each arrondissement with **H3 hexagonal cells** at resolution 9 (~105 m edge length, ~0.1 km²).  
   2. For each hexagon, measure the four indicators using **circular buffers**:  
-       - **1,600 m radius** for schools, subway stations, and bike paths (~20-min walk)  
-       - **800 m radius** for parks (~10-min walk)  
+       - **1,600 m radius** for healthcare, recreation, emergency services, commerce and employment centers (~20-min walk)  
+       - **800 m radius** for parks and Public Transports (~10-min walk)  
   3. Apply Min-Max normalization.  
   4. Apply **H3 neighbor smoothing** using `h3.grid_disk(cell, k=2)` — each cell is averaged over its 2-ring neighborhood (up to 19 cells).  
   5. Re-normalize and compute the composite score.  
