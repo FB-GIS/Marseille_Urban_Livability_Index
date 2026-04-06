@@ -76,8 +76,7 @@ The analysis follows four main steps:
        - **800 m radius** for parks and Public Transports (~10-min walk)  
   3. Apply Min-Max normalization.  
   4. Apply **H3 neighbor smoothing** using `h3.grid_disk(cell, k=2)` — each cell is averaged over its 2-ring neighborhood (up to 19 cells).  
-  5. Re-normalize and compute the composite score.  
-  6. Export results to **GeoJSON** and visualize interactively.  
+  5. Re-normalize and compute the composite score.   
   
   ### Indicators  
   
