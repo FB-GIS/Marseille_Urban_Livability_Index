@@ -42,7 +42,10 @@ The analysis follows four main steps:
        - Commerce Density          : nb shops / area  
        - Employment Centers Density: nb offices/industrial / area  
 
-  3. INDEX COMPUTATION  
+  3. INDEX COMPUTATION
+
+     1. Livability Index :  
+          
      - All indicators are normalized to a [1, 10] scale using MinMaxScaler.  
      - A weighted sum is applied to produce the Unified Index:  
          Road Density                : 0.10  
@@ -55,9 +58,29 @@ The analysis follows four main steps:
          Street Lighting Density     : 0.10  
          Commerce Density            : 0.15  
          Employment Centers Density  : 0.10  
-     - The Unified Index is then re-normalized to [1, 10] and rounded.  
+     - The Unified Index is then re-normalized to [1, 10] and rounded.
+    
+    2.Accessibility Index:  
+  
+    1. Polyfill each arrondissement with **H3 hexagonal cells** at resolution 9 (~105 m edge length, ~0.1 km²).  
+    2. For each hexagon, measure the four indicators using **circular buffers**:  
+       - **1,600 m radius** for schools, subway stations, and bike paths (~20-min walk)  
+       - **800 m radius** for parks (~10-min walk)  
+    3. Apply Min-Max normalization.  
+    4. Apply **H3 neighbor smoothing** using `h3.grid_disk(cell, k=2)` — each cell is averaged over its 2-ring neighborhood (up to 19 cells).  
+    5. Re-normalize and compute the composite score.  
+    6. Export results to **GeoJSON** and visualize interactively.  
+  
+  ### Indicators  
+  
+  | Indicator | Measurement | Buffer (hex stage) |
+  |---|---|---|  
+  | Schools | Count | 1,600 m |  
+  | Subway stations | Count | 1,600 m |  
+  | Bike paths | Total length (m) | 1,600 m |  
+  | Parks | Total area (m²) | 800 m |  
 
-  4. VISUALIZATION  
+  5. VISUALIZATION  
      - Choropleth map for each Index (Livability and Accessibility) across all 16 districts  
        (RdYlGn color ramp — red = low quality, green = high quality).  
 
